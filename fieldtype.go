@@ -24,11 +24,12 @@ func run(gqlField, gqlType string) func(pass *gqlanalysis.Pass) (interface{}, er
 				if field != nil && field.Type != nil {
 					fmt.Printf("📮 Read Field %s\n", field.Name)
 					if field.Name == gqlField && field.Type.Name() != gqlType {
-						return nil, fmt.Errorf("%s: field %s is not %s, in fact %s",
+						pass.Reportf(field.Position, "%s: field %s is not %s, in fact %s",
 							field.Position.Src.Name,
 							gqlField,
 							gqlType,
 							field.Type.Name())
+						return nil, nil
 					}
 				}
 			}
