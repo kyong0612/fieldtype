@@ -1,0 +1,13 @@
+type Mutation {
+    createA(input: CreateAInput!): CreateAPayload!
+}
+
+input CreateAInput {
+    name: String!
+    numberValue: Int!
+}
+
+type CreateAPayload {
+    a: A!
+    numberValue: Numeric
+}

@@ -1,0 +1,10 @@
+type A {
+	id: ID!
+	name: String!
+	numberValue: Int!
+}
+
+type B {
+	name: String!
+	numberValue: Numeric!
+}
