@@ -2,7 +2,6 @@ package main
 
 import (
 	"flag"
-	"fmt"
 
 	"github.com/kyong0612/fieldtype"
 
@@ -10,7 +9,6 @@ import (
 )
 
 func main() {
-	fmt.Println("##### START FIELD #####")
 	var fieldName string
 	var typeName string
 	flag.StringVar(&fieldName, "fieldName", "", "target field name")
