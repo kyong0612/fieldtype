@@ -1,7 +1,7 @@
 type A {
 	id: ID!
 	name: String!
-	numberValue: Int!
+	numberValue: Numeric
 }
 
 type B {
