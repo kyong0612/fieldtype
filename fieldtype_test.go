@@ -1,8 +1,9 @@
 package fieldtype_test
 
 import (
-	"fieldtype"
 	"testing"
+
+	"github.com/kyong0612/fieldtype"
 
 	"github.com/gqlgo/gqlanalysis/analysistest"
 )

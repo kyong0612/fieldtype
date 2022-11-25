@@ -1,4 +1,4 @@
-module fieldtype
+module github.com/kyong0612/fieldtype
 
 go 1.19
 

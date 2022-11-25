@@ -1,9 +1,10 @@
 package main
 
 import (
-	"fieldtype"
 	"flag"
 	"fmt"
+
+	"github.com/kyong0612/fieldtype"
 
 	"github.com/gqlgo/gqlanalysis/multichecker"
 )
